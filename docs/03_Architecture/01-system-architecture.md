@@ -15,16 +15,17 @@ craftvision-3d/
 ├── backend/                              # All .NET backend source code
 ├── frontend/                             # Next.js 15 Frontend
 ├── docs/                                 # Project Documentation
-│   ├── SRS/                              # Software Requirements Specification
-│   ├── SDS/                              # Software Design Specification
-│   ├── Architecture/                     # Architecture Diagrams & ADRs
-│   ├── ERD/                              # Entity Relationship Diagrams
-│   ├── API/                              # API Contracts & Swagger docs
-│   ├── UseCases/                         # Use case documents
-│   ├── SequenceDiagram/                  # UML Sequence Diagrams
-│   ├── ClassDiagram/                     # UML Class Diagrams
-│   ├── Deployment/                       # Deployment architecture notes
-│   └── MeetingMinutes/                   # Team meeting notes
+│   ├── 00_Phases/                        # Project phases and lifecycle documents
+│   ├── 01_SRS/                           # Software Requirements Specification
+│   ├── 02_SDS/                           # Software Design Specification
+│   ├── 03_Architecture/                  # Architecture Diagrams & ADRs
+│   ├── 04_UseCases/                      # Use case documents
+│   ├── 05_ERD/                           # Entity Relationship Diagrams
+│   ├── 06_ClassDiagram/                  # UML Class Diagrams
+│   ├── 07_SequenceDiagram/               # UML Sequence Diagrams
+│   ├── 08_API/                           # API Contracts & Swagger docs
+│   ├── 09_Deployment/                    # Deployment architecture notes
+│   └── 10_MeetingMinutes/                # Team meeting notes
 │
 ├── databases/                            # Database scripts and migrations
 │   ├── backend/
@@ -59,10 +60,11 @@ craftvision-3d/
 - **`backend/`**: Contains all .NET microservices, Gateway, and BuildingBlocks (detailed extensively in Section 4).
 - **`frontend/`**: Contains the Next.js 15 application codebase, using App Router, Tailwind CSS, and Zustand for state management.
 - **`docs/`**: Centralized documentation for the entire team.
-  - `SRS/` & `SDS/`: System Requirements and Design Specifications.
-  - `Architecture/`: High-level architecture and Architecture Decision Records (ADRs).
-  - `ERD/`, `SequenceDiagram/`, `ClassDiagram/`: Database schema and UML diagrams.
-  - `API/`: Postman documentation exports or OpenAPI/Swagger specs.
+  - `00_Phases/`: Documenting different project phases.
+  - `01_SRS/` & `02_SDS/`: System Requirements and Design Specifications.
+  - `03_Architecture/`: High-level architecture and Architecture Decision Records (ADRs).
+  - `05_ERD/`, `07_SequenceDiagram/`, `06_ClassDiagram/`: Database schema and UML diagrams.
+  - `08_API/`: Postman documentation exports or OpenAPI/Swagger specs.
 - **`databases/`**: SQL scripts for initializing databases and managing raw migrations outside of EF Core if needed.
 - **`docker/`**: Dockerfiles and environment-specific configuration files for containerizing each service (backend, AI, gateway, Postgres, Redis, Kafka).
 - **`monitoring/`**: Configurations for system observability.
