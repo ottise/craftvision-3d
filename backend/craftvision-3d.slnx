@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/AI Service/">
+    <Project Path="AI/CraftVision.AI.Application/CraftVision.AI.Application.csproj" />
+    <Project Path="AI/CraftVision.AI.Domain/CraftVision.AI.Domain.csproj" />
+    <Project Path="AI/CraftVision.AI.Infrastructure/CraftVision.AI.Infrastructure.csproj" />
+    <Project Path="AI/CraftVision.AI.Presentation/CraftVision.AI.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Backend/">
+    <Project Path="Backend/CraftVision.Application/CraftVision.Application.csproj" />
+    <Project Path="Backend/CraftVision.Domain/CraftVision.Domain.csproj" />
+    <Project Path="Backend/CraftVision.Infrastructure/CraftVision.Infrastructure.csproj" />
+    <Project Path="Backend/CraftVision.Presentation/CraftVision.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/CraftVision.BuildingBlocks/CraftVision.BuildingBlocks.csproj" />
+  </Folder>
+  <Folder Name="/Gateway/">
+    <Project Path="Gateway/CraftVision.Gateway/CraftVision.Gateway.csproj" />
+  </Folder>
+</Solution>

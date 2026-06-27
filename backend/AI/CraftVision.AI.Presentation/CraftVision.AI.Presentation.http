@@ -1,0 +1,6 @@
+@CraftVision.AI.Presentation_HostAddress = http://localhost:5207
+
+GET {{CraftVision.AI.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
