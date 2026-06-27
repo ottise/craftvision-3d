@@ -1,22 +1,21 @@
 # ==========================================
-# RUNTIME ENVIRONMENT FOR NEXT.JS DEV SERVER
+# RUNTIME ENVIRONMENT FOR REACT DEV SERVER
 # ==========================================
 FROM node:20-alpine
 WORKDIR /app
 
-# Next.js uses NEXT_PUBLIC_ for client-side environment variables
-ARG NEXT_PUBLIC_API_URL=http://localhost:8080
-ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
+ARG VITE_API_URL=http://localhost:8080
+ENV VITE_API_URL=$VITE_API_URL
 
 # Cache dependencies by copying package files first
 COPY package.json package-lock.json* ./
-RUN npm install
+RUN npm install --silent
 
 # Copy the rest of the application code
 COPY . .
 
-# Expose Next.js default development port
-EXPOSE 3000
+# Expose Vite's default development port
+EXPOSE 5173
 
-# Start the Next.js development server
-CMD ["npm", "run", "dev"]
+# Start the Vite development server on host 0.0.0.0
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
